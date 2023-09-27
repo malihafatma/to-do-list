@@ -1,0 +1,100 @@
+/* CSS code for the Todo List application */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+    color: #213555;
+}
+
+.dark-mode {
+    background-color: #213555;
+    color: #E5D283;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-top: 0;
+    color: #213555;
+    font-size: 28px;
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align elements to the left */
+    background-color: #F0F0F0;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#todo-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Add space below the input */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #213555;
+    color: #E5D283;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Add space below each button */
+}
+
+button:hover {
+    background-color: #0E1B30;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+    background-color: #DFF0D8;
+    color: #3C763D;
+}
+
+button.delete-button {
+    background-color: #D9534F;
+}
+
+button.delete-button:hover {
+    background-color: #C9302C;
+}
+
+button.edit-button {
+    background-color: #F0AD4E;
+    margin-right: 10px;
+}
+
+button.edit-button:hover {
+    background-color: #E7A03E;
+}
